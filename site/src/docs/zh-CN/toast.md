@@ -1,11 +1,12 @@
 ## Toast 组件
-小时光，趣种草Toast组件
 
-### Loading用法
+小时光，趣种草 Toast 组件
 
-Toast Loading用法
+### Loading 用法
 
-:::demo Button 组件默认提供7种主题，由`type`属性来定义，默认为`default`。
+Toast Loading 用法
+
+:::demo Button 组件默认提供 7 种主题，由`type`属性来定义，默认为`default`。
 
 ```js
 render() {
@@ -17,21 +18,23 @@ render() {
     )
 }
 ```
+
 :::
 
 ### API:
-- Toast.loading(duration, content)
-  > 小时光Toast专用
 
-- Toast.loadingFancylife(duration, content)
-  >  趣种草Toast专用
+-   Toast.loading(duration, content)
+
+    > 小时光 Toast 专用
+
+-   Toast.loadingFancylife(duration, content)
+    > 趣种草 Toast 专用
 
 ### Attributes
-| 参数      | 说明    | 类型      | 可选值       | 默认值   |
-|---------- |-------- |---------- |-------------  |-------- |
-| duration     | 展示时间   | number  |   any            |    3000    |
-| content     | 图片链接   | string    |   - |     —    |
 
-##### 注：现在只有loading，后面有需求可以加其他的toast方法
+| 参数     | 说明     | 类型   | 可选值 | 默认值 |
+| -------- | -------- | ------ | ------ | ------ |
+| duration | 展示时间 | number | any    | 3000   |
+| content  | 图片链接 | string | -      | —      |
 
-
+##### 注：现在只有 loading，后面有需求可以加其他的 toast 方法
