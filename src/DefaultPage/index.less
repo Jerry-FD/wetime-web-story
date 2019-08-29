@@ -1,0 +1,30 @@
+.wetime-defaultPage-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    > img {
+        width: 98px;
+        height: 122px;
+    }
+    > div {
+        margin-top: 24px;
+        font-size: 15px;
+        color: #aaa;
+    }
+    > span {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        background: url('http://videoplayer.babytreeimg.com/back-1d1t9f1qa14ha18c7utc1k6d1jt49.png') no-repeat left center;
+        background-size: 24px 24px;
+        position: absolute;
+        left: 16px;
+        top: 20px;
+        top: calc(20px + constant(safe-area-inset-top));
+        top: calc(20px + env(safe-area-inset-top));
+    }
+}

@@ -1,0 +1,86 @@
+.wetime-toast {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1002;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .toast-refresh_icon {
+        display: inline-block;
+        width: 24px;
+        fill: rgba(255, 255, 255, 0.8);
+        transform-origin: 50% 50%;
+        text-align: center;
+        background-size: cover;
+        animation: refresh 1s linear infinite;
+    }
+    .wetime-toast_wrap {
+        width: 90px;
+        height: 90px;
+        border-radius: 10px;
+        background: rgba(0, 0, 0, 0.7);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .wetime-toast_text {
+        margin-top:12px;
+        color: #fafafa;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+}
+
+.wetime-toast-fancylife {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1002;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .wetime-toast_wrap {
+    width: 86.5px;
+    height: 33px;
+    border-radius: 19.5px;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .toast-refresh_icon {
+    display: inline-block;
+    width: 14px;
+    fill: rgba(255, 255, 255, 0.8);
+    transform-origin: 50% 50%;
+    text-align: center;
+    background-size: cover;
+    animation: refresh 1s linear infinite;
+  }
+  .wetime-toast_text {
+    margin-left:4.5px;
+    color: #fafafa;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6)
+}
+}
+@keyframes refresh {
+    from {
+        transform: rotate(0)
+    }
+    to {
+        transform: rotate(360deg)
+    }
+}

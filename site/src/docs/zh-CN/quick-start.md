@@ -4,9 +4,6 @@
 
 [![NPM](https://img.shields.io/npm/v/wetime-mobile.svg)](https://www.npmjs.com/package/wetime-mobile) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
-# 注
-- 缺少单元测试部分
-
 ## 安装
 
 ```bash
@@ -29,13 +26,21 @@ class Example extends React.Component {
 }
 ```
 
+## create-react-library
+![初始化项目](https://camo.githubusercontent.com/e811ce88585fc57b6f3a09d54834ec90e031e0c0/68747470733a2f2f63646e2e7261776769742e636f6d2f7472616e7369746976652d62756c6c736869742f6372656174652d72656163742d6c6962726172792f6d61737465722f6d656469612f747265652e737667)
 
-## gulp
-- es6 输出，支持在项目中使用tree shaking
-- eslint eslint-config-airbnb
+## rollup
+- 更加适合Library的模块打包工具
+- Tree Shaking: 自动移除未使用的代码, 输出更小的文件
+- Scope Hoisting: 所有模块构建在一个函数内, 执行效率更高
+- 配置更加精简 容易上手
+
 配置修改：
+- 输出目录修改
 - 支持less
+- 支持svg
 - 翻译ts
+- 代码压缩
 
 ## typescript
 静态类型检测
@@ -58,7 +63,18 @@ export { default as Toast } from './Toast'
 注：
 1. 组件开发需要使用[typescript](https://www.tslang.cn/index.html/)
 2. 样式命名 遵从[BEM命名规范](https://www.jianshu.com/p/287a89b364f0)，例如 block-element_modifier
+3. 需要写test用例(使用jest跟enzyme(dom渲染使用))
 
+```
+import DefaultPage from './'
+
+describe('DefaultPage', () => {
+  it('is truthy', () => {
+    expect(DefaultPage).toBeTruthy()
+  })
+})
+
+```
 
 ## 调试
 调试目录 example
@@ -82,7 +98,7 @@ export default class App extends Component {
   }
 }
 ```
-- 热刷新 npm run watch
+- 热刷新 npm start
 - 当然也启用组件的实时编译 在根目录下 npm start
 
 ## 文档
@@ -96,6 +112,8 @@ site下也是一个单独的react脚手架搭建成的应用，作用是生成�
 - wetime-web下 wetime-mobile-demo 是专门给文档创造demo使用的仓库
 - wetime-mobile-demo的发布流程跟wetime-web下的其他项目一样
 
+## 测试
+npm run test or  npm run test:watch
 
 ## 构建
 npm run build
