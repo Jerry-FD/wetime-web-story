@@ -7,7 +7,7 @@ react hooks函数，需要在v16.8及以后版本使用
   - element(Element): 需要监听的Dom元素
   - option(?Object): [IntersectionObserver](https://developer.mozilla.org/zh-CN/docs/Web/API/IntersectionObserver)
 ### 用法
-```
+```JSX
 import { Hooks } from '@bbt.wetime/wetime-mobile'
 Hooks.useIntersectionObserver((e) => {
         if(e[0].intersectionRatio === 1) {

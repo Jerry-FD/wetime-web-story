@@ -7,7 +7,7 @@
 
 :::demo Button 组件默认提供7种主题，由`type`属性来定义，默认为`default`。
 
-```js
+```JSX
 render() {
     return (
         <div style={{width: '100%', height: '100%'}}>

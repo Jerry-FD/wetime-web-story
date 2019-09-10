@@ -1,0 +1,20 @@
+declare function transformCommNum(num: number): number | string;
+declare function getParam(url: string, name: string): string | null;
+declare function getWetimeHost(env: string, app?: string): string;
+export declare function getFancylifeHost(): string;
+export declare function getMapiHost(): string;
+export declare function getMeitunHost(): string;
+declare function formatMiniutes(time: number): string;
+export declare function commentTimeTransform(time: string): string;
+export declare function httpTohttps(url: string): string;
+declare const _default: {
+    transformCommNum: typeof transformCommNum;
+    getParam: typeof getParam;
+    getWetimeHost: typeof getWetimeHost;
+    getFancylifeHost: typeof getFancylifeHost;
+    formatMiniutes: typeof formatMiniutes;
+    commentTimeTransform: typeof commentTimeTransform;
+    getMapiHost: typeof getMapiHost;
+    httpTohttps: typeof httpTohttps;
+};
+export default _default;
